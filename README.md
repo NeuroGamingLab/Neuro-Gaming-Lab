@@ -1,4 +1,4 @@
-# Neurogaming Lab
+# Neuro Gaming Lab
 
 Neurogaming Lab is an AI engineering and research initiative focused on rejuvenating classic and legacy arcade games with modern machine learning (ML) and reinforcement learning (RL) techniques.
 
