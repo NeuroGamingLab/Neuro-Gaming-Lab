@@ -8,4 +8,4 @@ Our work bridges game preservation and innovation, treating classic arcade title
 
 At its core, Neurogaming Lab is where nostalgia meets intelligence—reviving the past to build the future of playable AI.
 
-__Drafted with assistance from multiple LLMs.__
+_Drafted with assistance from multiple LLMs._
