@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NeuroGamingLab</title>
+  <title>Neuro Gaming Lab</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -69,28 +69,20 @@
 
     .logo {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--text);
-      letter-spacing: -0.02em;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--accent);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
       margin-bottom: 0.5rem;
     }
 
-    .logo a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .logo a:hover {
-      color: var(--accent);
-    }
-
     h1 {
-      font-size: clamp(1.5rem, 4vw, 2rem);
-      font-weight: 600;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 700;
       letter-spacing: -0.02em;
-      line-height: 1.3;
-      color: var(--muted);
+      line-height: 1.2;
+      color: var(--text);
     }
 
     .tagline {
@@ -149,42 +141,6 @@
       color: var(--accent);
     }
 
-    .repos {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      margin-top: 1.5rem;
-    }
-
-    .repo-link {
-      display: block;
-      padding: 1rem 1.25rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      color: var(--text);
-      text-decoration: none;
-      font-weight: 500;
-      transition: border-color 0.2s, color 0.2s;
-    }
-
-    .repo-link:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-
-    .repo-link .name {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.95rem;
-    }
-
-    .repo-link .desc {
-      font-size: 0.85rem;
-      color: var(--muted);
-      font-weight: 400;
-      margin-top: 0.25rem;
-    }
-
     footer {
       margin-top: 3rem;
       padding-top: 2rem;
@@ -215,7 +171,7 @@
 <body>
   <div class="container">
     <header>
-      <div class="logo"><a href="https://github.com/NeuroGamingLab">NeuroGamingLab</a></div>
+      <div class="logo">Neuro Gaming Lab</div>
       <h1>Where nostalgia meets intelligence</h1>
       <p class="tagline">Rejuvenating classic arcade games with <strong>ML</strong> and <strong>reinforcement learning</strong>.</p>
     </header>
@@ -232,29 +188,15 @@
         <p>Adaptive NPCs, self-improving opponents, autonomous players, and AI-assisted game mechanics. Classic arcade titles as testbeds for decision-making, control, and emergent behavior.</p>
       </div>
       <p>
-        From pixel-based environments to modern simulators, NeuroGamingLab explores how learning agents can master, modify, and meaningfully interact with games across generations.
+        From pixel-based environments to modern simulators, Neuro Gaming Lab explores how learning agents can master, modify, and meaningfully interact with games across generations.
       </p>
       <p>
         <strong>Reviving the past to build the future of playable AI.</strong>
       </p>
     </section>
 
-    <section>
-      <h2 style="font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--text);">Projects</h2>
-      <div class="repos">
-        <a href="https://github.com/NeuroGamingLab/Neuro-Gaming-Lab" class="repo-link" target="_blank" rel="noopener">
-          <span class="name">Neuro-Gaming-Lab</span>
-          <span class="desc">Lab hub — AI engineering and research for classic arcade games with ML/RL.</span>
-        </a>
-        <a href="https://github.com/NeuroGamingLab/neuro-asteroids-ml-ships" class="repo-link" target="_blank" rel="noopener">
-          <span class="name">neuro-asteroids-ml-ships</span>
-          <span class="desc">Asteroids with ML-driven ships.</span>
-        </a>
-      </div>
-    </section>
-
     <footer>
-      <a href="https://github.com/NeuroGamingLab" class="github-link" target="_blank" rel="noopener">NeuroGamingLab on GitHub →</a>
+      <a href="https://github.com/NeuroGamingLab/Neuro-Gaming-Lab" class="github-link" target="_blank" rel="noopener">View on GitHub →</a>
     </footer>
   </div>
 </body>
