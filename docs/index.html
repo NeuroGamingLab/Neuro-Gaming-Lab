@@ -63,6 +63,32 @@
       z-index: 1;
     }
 
+    .org-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .org-logo {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.08em;
+      text-decoration: none;
+    }
+
+    .org-logo:hover {
+      color: var(--accent);
+    }
+
+    .org-logo span {
+      color: var(--accent);
+    }
+
     header {
       margin-bottom: 3rem;
     }
@@ -71,7 +97,7 @@
       font-family: 'JetBrains Mono', monospace;
       font-size: 0.85rem;
       font-weight: 500;
-      color: #7c3aed;
+      color: var(--accent);
       letter-spacing: 0.2em;
       text-transform: uppercase;
       margin-bottom: 0.5rem;
@@ -146,6 +172,10 @@
       border-top: 1px solid var(--border);
       font-size: 0.9rem;
       color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.25rem;
     }
 
     footer a {
@@ -161,20 +191,33 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      margin-top: 0.5rem;
       color: var(--accent);
       font-weight: 500;
+    }
+
+    .audio-label {
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .audio-player {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 0.5rem 0 0.75rem;
+      height: 2.5rem;
     }
 
     .audio-link {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      margin-top: 1rem;
+      margin-top: 0.25rem;
       color: var(--accent);
       text-decoration: none;
       font-weight: 500;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
 
     .audio-link:hover {
@@ -184,6 +227,9 @@
 </head>
 <body>
   <div class="container">
+    <nav class="org-header">
+      <a href="https://github.com/NeuroGamingLab" class="org-logo" target="_blank" rel="noopener">Neuro<span>Gaming</span>Lab</a>
+    </nav>
     <header>
       <div class="logo">Neuro Gaming Lab</div>
       <h1>Where nostalgia meets intelligence</h1>
@@ -207,11 +253,18 @@
       <p>
         <strong>Reviving the past to build the future of playable AI.</strong>
       </p>
-      <a href="https://github.com/NeuroGamingLab/Neuro-Gaming-Lab/raw/main/Injecting_Neural_Networks_Into_Arcade_Classics.m4a" class="audio-link" target="_blank" rel="noopener">Listen: Injecting Neural Networks Into Arcade Classics (audio)</a>
+      <p class="audio-label">Injecting Neural Networks Into Arcade Classics</p>
+      <audio class="audio-player" controls preload="metadata">
+        <source src="https://media.githubusercontent.com/media/NeuroGamingLab/Neuro-Gaming-Lab/main/Injecting_Neural_Networks_Into_Arcade_Classics.m4a" type="audio/mp4">
+        <a href="https://media.githubusercontent.com/media/NeuroGamingLab/Neuro-Gaming-Lab/main/Injecting_Neural_Networks_Into_Arcade_Classics.m4a" class="audio-link" target="_blank" rel="noopener">Download / open audio</a>
+      </audio>
+      <a href="https://media.githubusercontent.com/media/NeuroGamingLab/Neuro-Gaming-Lab/main/Injecting_Neural_Networks_Into_Arcade_Classics.m4a" class="audio-link" target="_blank" rel="noopener">Open in new tab</a>
     </section>
 
     <footer>
       <a href="https://github.com/NeuroGamingLab/Neuro-Gaming-Lab" class="github-link" target="_blank" rel="noopener">View on GitHub →</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://github.com/NeuroGamingLab" class="github-link" target="_blank" rel="noopener">NeuroGamingLab</a>
     </footer>
   </div>
 </body>
