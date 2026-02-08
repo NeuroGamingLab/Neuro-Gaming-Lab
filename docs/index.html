@@ -223,6 +223,42 @@
     .audio-link:hover {
       text-decoration: underline;
     }
+
+    .games-section h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 1rem;
+      letter-spacing: -0.01em;
+    }
+
+    .game-list {
+      list-style: none;
+    }
+
+    .game-list li {
+      margin-bottom: 0.75rem;
+    }
+
+    .game-list a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 0;
+    }
+
+    .game-list a:hover {
+      text-decoration: underline;
+    }
+
+    .game-list a::after {
+      content: '→';
+      font-weight: 600;
+      opacity: 0.8;
+    }
   </style>
 </head>
 <body>
@@ -259,6 +295,14 @@
         <a href="https://media.githubusercontent.com/media/NeuroGamingLab/Neuro-Gaming-Lab/main/Injecting_Neural_Networks_Into_Arcade_Classics.m4a" class="audio-link" target="_blank" rel="noopener">Download / open audio</a>
       </audio>
       <a href="https://media.githubusercontent.com/media/NeuroGamingLab/Neuro-Gaming-Lab/main/Injecting_Neural_Networks_Into_Arcade_Classics.m4a" class="audio-link" target="_blank" rel="noopener">Open in new tab</a>
+    </section>
+
+    <section class="games-section">
+      <h2>Enhanced Arcade Games</h2>
+      <ul class="game-list">
+        <li><a href="https://neurogaminglab.github.io/Neuro-Asteroids-ML-Agentic-Ships/" target="_blank" rel="noopener">ML Driven Asteroid Ships</a></li>
+        <li><a href="https://neurogaminglab.github.io/Neuro-Adaptive-Robotron-ML/" target="_blank" rel="noopener">Neuro-Adaptive-Robotron-ML</a></li>
+      </ul>
     </section>
 
     <footer>
